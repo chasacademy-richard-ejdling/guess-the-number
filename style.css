@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+:root {
+    --content-bg-color: rgb(1, 79, 134);
+
+    --content-border-radius: 1rem;
+    --content-padding: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    font-family: 'Source Serif Pro', serif;
+}
+
+body {
+    background-color: rgb(1, 42, 74);
+}
+
+.minMargin {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.container {
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: var(--content-bg-color);
+    border-radius: var(--content-border-radius);
+    display: grid;
+}
+
+.startScreen{
+    background-color: var(--content-bg-color);
+    border-radius: var(--content-border-radius);
+    padding: var(--content-padding);
+    grid-column: 1/1;
+    grid-row: 1/1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: fit-content
+}
+
+.gameType{
+    width: 100%;
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.singleplayer {
+    background-color: var(--content-bg-color);
+    border-radius: var(--content-border-radius);
+    padding: var(--content-padding);
+    grid-column: 1/1;
+    grid-row: 1/1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.return {
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.multiplayer {
+    background-color: var(--content-bg-color);
+    border-radius: var(--content-border-radius);
+    padding: var(--content-padding);
+    grid-column: 1/1;
+    grid-row: 1/1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.againstAI {
+    background-color: var(--content-bg-color);
+    border-radius: var(--content-border-radius);
+    padding: var(--content-padding);
+    grid-column: 1/1;
+    grid-row: 1/1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.button {
+    color: var(--content-bg-color);
+}
+
+.input {
+    color: var(--content-bg-color);
+}
+
+h1, h2 {
+    letter-spacing: 0.1rem;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+}
+
+.tries {
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* solve the changing font-weights on waningtext(or any colored text positioned underneath input) when input field is in focus */

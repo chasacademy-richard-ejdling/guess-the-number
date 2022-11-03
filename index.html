@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the Number</title>
+</head>
+
+<body>
+    <div class="minMargin">
+        <div class="container">
+            <div class="singleplayer hidden">
+                <h1>Singleplayer Game</h1>
+                <p class="instruction">Write a number between 1 and 100 to guess</p>
+                <div class="inputAndButton">
+                    <input class="guessInput input" type="text">
+                    <button class="guessButton button">Guess</button>
+                    <button class="restartButton button hidden">Restart</button>
+                    <span class="answer"></span>
+                </div>
+                <p class="inputNaN warning hidden">You can only input numbers!<br>No other characters (including space).
+                </p>
+                <p class="noInput warning hidden">Please input a number.</p>
+                <p class="outOfRange warning hidden">Input a number between 1 and 100.</p>
+                <h2>Your Previous Guesses <span class="tries">Tries: 0 (max: 5)</span></h2>
+                <ol class="guessList"></ol>
+                <button class="return button">Return to Start Screen</button>
+            </div>
+            <div class="multiplayer hidden">
+                <h1>Multiplayer Game</h1>
+                <p class="instruction">Write a number between 1 and 100 to guess</p>
+                <div class="inputAndButton">
+                    <input class="guessInput input" type="text">
+                    <button class="guessButton button">Guess</button>
+                    <button class="restartButton button hidden">Restart</button>
+                    <span class="answer"></span>
+                </div>
+                <p class="inputNaN warning hidden">You can only input numbers!<br>No other characters (including space).
+                </p>
+                <p class="noInput warning hidden">Please input a number.</p>
+                <p class="outOfRange warning hidden">Input a number between 1 and 100.</p>
+                <h2>Your Previous Guesses <span class="tries">Tries: 0 (max: 5)</span></h2>
+                <ol class="guessList"></ol>
+            </div>
+            <div class="againstAI hidden">
+                <h1>Playing Against AI</h1>
+                <p class="instruction">Write a number between 1 and 100 to guess</p>
+                <div class="inputAndButton">
+                    <input class="guessInput input" type="text">
+                    <button class="guessButton button">Guess</button>
+                    <button class="restartButton button hidden">Restart</button>
+                    <span class="answer"></span>
+                </div>
+                <p class="inputNaN warning hidden">You can only input numbers!<br>No other characters (including space).
+                </p>
+                <p class="noInput warning hidden">Please input a number.</p>
+                <p class="outOfRange warning hidden">Input a number between 1 and 100.</p>
+                <h2>Your Previous Guesses <span class="tries">Tries: 0 (max: 5)</span></h2>
+                <ol class="guessList"></ol>
+            </div>
+            <div class="startScreen">
+                <h1>Number Guessing Game</h1>
+                <div class="gameType ">
+                    <button class="singleButton button">Singleplayer</button>
+                    <button class="multiButton button">Multiplayer</button>
+                    <button class="aiButton button">Against AI</button>
+                </div>
+            </div>
+            <div class="endScreen"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
